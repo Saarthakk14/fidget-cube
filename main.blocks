@@ -1,1 +1,25 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_gesture_event" id="}skVLp?A{Q|F,!Y)#vn(" x="154" y="-306"><field name="NAME">Gesture.Shake</field></block><block type="device_button_event" id="FzhG8^E:ESO8=6TI/H}G" x="348" y="-257"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_play_note" id="^Dl1S7x2kfCz[snv8290"><value name="note"><shadow type="device_note" id="b~9T-u#(SFYP~XTmbTzM"><field name="name">311</field></shadow></value><value name="duration"><shadow type="device_beat" id="}:$cDqHbf*wIW=SRh3,G"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="device_play_note" id="fovC``fnu/g~~dLNevKH"><value name="note"><shadow type="device_note" id="l3C@tMM=-qZ+nIlXJ.j2"><field name="name">349</field></shadow></value><value name="duration"><shadow type="device_beat" id="No(%g~3M^Bv);BSoDgts"><field name="fraction">BeatFraction.Whole</field></shadow></value></block></next></block></statement></block><block type="device_button_event" id="ja=}lO8%,7lqYy$?-w81" x="28" y="-147"><field name="NAME">Button.B</field></block><block type="device_gesture_event" id="QJb06Y/_2fV%I]d9I*Zi" x="0" y="0"><field name="NAME">Gesture.TiltRight</field></block><block type="device_button_event" id="HqO(9_Oy!ZrCa,VlS84Z" x="203" y="-10"><field name="NAME">Button.AB</field></block><block type="input_logo_event" id="=N`lSJ+zFAlL5OIVBL`*" x="-108" y="128"><field name="action">TouchButtonEvent.Touched</field></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="^c2VJeW-s_S#?{76*ep8">myImage</variable></variables><block type="device_gesture_event" id="}skVLp?A{Q|F,!Y)#vn(" x="167" y="-319"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_leds" id="yCQE#Y#9_oNIKYl{5v~D"><field name="LEDS">`
+        . # # # . 
+        # # # . . 
+        # # . . . 
+        # # # . . 
+        . # # # .
+        `</field></block></statement></block><block type="device_button_event" id="FzhG8^E:ESO8=6TI/H}G" x="361" y="-270"><field name="NAME">Button.A</field></block><block type="device_button_event" id="ja=}lO8%,7lqYy$?-w81" x="-105" y="-208"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_print_message" id="b1nbMKU]P4HUriFHkTGq"><value name="text"><shadow type="text" id="UWZ!Te3QQld:##U!hDJf"><field name="TEXT">Fidget Cube</field></shadow></value></block></statement></block><block type="input_logo_event" id="=N`lSJ+zFAlL5OIVBL`*" x="249" y="-53"><field name="action">TouchButtonEvent.Touched</field><statement name="HANDLER"><block type="device_show_leds" id="Az$w%NGV;epjo1JneQ,+"><field name="LEDS">`
+        . # # # . 
+        # # # . . 
+        # # . . # 
+        # # # . . 
+        . # # # .
+        `</field><next><block type="device_show_leds" id="xi?U)p^@ec#!_OwV.:7R"><field name="LEDS">`
+        . # # # . 
+        # # # # . 
+        # # . . . 
+        # # # # . 
+        . # # # .
+        `</field><next><block type="device_show_leds" id="`p0!m}TEID$j;^Fh;;.p"><field name="LEDS">`
+        . # # # . 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        . # # # .
+        `</field></block></next></block></next></block></statement></block><block type="device_button_event" id="HqO(9_Oy!ZrCa,VlS84Z" x="323" y="-25"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="playMelody" id="3Bmg1}Rq@3}I*^tI|kHm"><value name="melody"><shadow type="melody_editor" id="zg4]LxR[9!`:)7A}1$!M"><field name="melody">"F G E C5 G C G - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="^ZSFJ4-$#g!C_k(^mGtX"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></block></statement></block><block type="device_gesture_event" id="QJb06Y/_2fV%I]d9I*Zi" x="0" y="0"><field name="NAME">Gesture.TiltRight</field><statement name="HANDLER"><block type="basic_show_icon" id="K{L=%k|99qD,:J6U9$2U"><field name="i">IconNames.Duck</field></block></statement></block></xml>
